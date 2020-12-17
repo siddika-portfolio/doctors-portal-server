@@ -55,7 +55,6 @@ client.connect(err => {
             }
             appointmentCollection.find(filter)
                 .toArray((err, documents) => {
-                    console.log(email, date.date, doctors, documents)
                     res.send(documents);
                 })
         })
